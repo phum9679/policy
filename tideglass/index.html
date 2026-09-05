@@ -3,256 +3,344 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
   <title>Tideglass Privacy Policy</title>
   <style>
-  :root {
-    color-scheme: light;
-    --paper: #f3efe4;
-    --ink: #24261f;
-    --muted: #6d7065;
-    --line: #c9c3b0;
-    --accent: #356d66;
-    --accent-soft: #dce8e2;
-  }
-  * { box-sizing: border-box; }
-  html { background: #dad6ca; color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
-  body { margin: 0; overflow-x: hidden; }
-  .page { width: min(1080px, calc(100% - 32px)); margin: 32px auto; background: var(--paper); border: 1px solid #b8b29f; }
-  .index-edge { height: 10px; background: repeating-linear-gradient(90deg,var(--accent) 0 46px,transparent 46px 58px); }
-  .mast > * { min-width: 0; }
-.mast { padding: 46px 56px 34px; display: grid; grid-template-columns: 1fr auto; gap: 30px; border-bottom: 1px solid var(--line); }
-  .kicker { font: 600 12px/1 ui-monospace, monospace; letter-spacing: .16em; color: var(--accent); }
-  h1 { margin: 12px 0 10px; font: 500 clamp(38px,6vw,72px)/.98 Georgia, serif; letter-spacing: -.03em; }
-  .subtitle { max-width: 680px; margin: 0; color: var(--muted); font-size: 17px; line-height: 1.6; }
-  .record { border: 1px solid var(--line); padding: 14px 16px; min-width: 190px; align-self: start; font: 12px/1.6 ui-monospace, monospace; }
-  .record b { display:block; color:var(--accent); }
-  .facts { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-bottom:1px solid var(--line); }
-  .fact { padding:18px 20px; border-right:1px solid var(--line); min-width:0; }
-  .fact:last-child { border-right:0; }
-  .fact small { display:block; color:var(--muted); font:10px/1.3 ui-monospace,monospace; letter-spacing:.08em; overflow-wrap:anywhere; }
-  .fact strong { display:block; margin-top:6px; font-size:15px; overflow-wrap:anywhere; }
-  .layout { display:grid; grid-template-columns:240px minmax(0,1fr); }
-  nav { padding:30px 26px; border-right:1px solid var(--line); }
-  nav strong { display:block; margin-bottom:12px; font:11px/1 ui-monospace,monospace; letter-spacing:.12em; color:var(--accent); }
-  nav a { display:block; color:var(--ink); text-decoration:none; padding:7px 0; font-size:12px; border-bottom:1px dotted #cfc8b6; }
-  article { padding:36px 52px 56px; min-width:0; }
-  section { position:relative; padding:0 0 34px 48px; margin-bottom:34px; border-bottom:1px solid var(--line); }
-  section:last-child { border-bottom:0; margin-bottom:0; }
-  .num { position:absolute; left:0; top:0; width:30px; height:30px; border:1px solid var(--accent); border-radius:50%; display:grid; place-items:center; font:11px ui-monospace,monospace; color:var(--accent); }
-  h2 { margin:0 0 14px; font:500 27px/1.15 Georgia,serif; }
-  p, li { font-size:15px; line-height:1.72; overflow-wrap:anywhere; }
-  p { margin:10px 0; }
-  ul { padding-left:20px; }
-  .note { margin:18px 0; padding:14px 16px; background:var(--accent-soft); border-left:3px solid var(--accent); }
-  code { font:13px ui-monospace,monospace; background:#e7e1d2; padding:2px 4px; }
-  footer { padding:24px 56px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; display:flex; justify-content:space-between; gap:20px; }
-  @media (max-width:480px) {
-  .facts { grid-template-columns:1fr; }
-  .fact { border-right:0; border-bottom:1px solid var(--line); }
-  .fact:last-child { border-bottom:0; }
-  nav { columns:1; }
-  nav a { overflow-wrap:anywhere; }
-}
-@media (max-width:760px) {
-    .page { width:100%; margin:0; border-inline:0; }
-    .mast > * { min-width: 0; }
-.mast { padding:30px 22px 24px; grid-template-columns:1fr; }
-    .record { min-width:0; }
-    .facts { grid-template-columns:repeat(2,minmax(0,1fr)); }
-    .fact:nth-child(2) { border-right:0; }
-    .fact:nth-child(-n+2) { border-bottom:1px solid var(--line); }
-    .layout { grid-template-columns:1fr; }
-    nav { border-right:0; border-bottom:1px solid var(--line); padding:20px 22px; columns:2; }
-    nav strong { column-span:all; }
-    nav a { break-inside:avoid; }
-    article { padding:30px 22px 42px; }
-    section { padding-left:42px; }
-    footer { padding:22px; flex-direction:column; }
-  }
 
-@media (max-width:480px) {
-  .facts { grid-template-columns:1fr; }
-  .fact { border-right:0; border-bottom:1px solid var(--line); }
-  .fact:nth-child(2) { border-right:0; }
-  .fact:last-child { border-bottom:0; }
-  nav { columns:1; }
+:root{
+  color-scheme:light;
+  --void:#171817;
+  --void-2:#212321;
+  --sheet:#f3f0e8;
+  --sheet-2:#ebe6dc;
+  --ink:#1b1e1c;
+  --muted:#6b6f69;
+  --rule:#c8c2b6;
+  --accent:#176e70;
+  --accent-soft:#a8d9d4;
 }
+*{box-sizing:border-box}
+html{background:var(--void);color:var(--ink);font-family:Arial,Helvetica,sans-serif;scroll-behavior:smooth}
+body{margin:0;min-width:0;background:
+  linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px) 0 0/24px 24px,
+  linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px) 0 0/24px 24px,
+  var(--void)}
+a{color:inherit}
+.shell{width:min(1180px,calc(100% - 44px));margin:34px auto 54px;position:relative}
+.casebar{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end;color:#d9ddd7;padding:0 4px 12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.casebar .series{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#9da39c}
+.casebar .id{font-size:12px;letter-spacing:.08em;text-align:right}
+.sheet{background:var(--sheet);border:1px solid #646962;box-shadow:0 18px 60px rgba(0,0,0,.28);position:relative;overflow:hidden}
+.sheet:before{content:"";position:absolute;inset:0 auto 0 0;width:8px;background:repeating-linear-gradient(to bottom,var(--accent) 0 54px,transparent 54px 72px);opacity:.9}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 220px;border-bottom:1px solid var(--rule);min-width:0}
+.hero-main{padding:48px 52px 42px 62px;min-width:0}
+.eyebrow{font:700 11px/1.3 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
+h1{font-size:clamp(46px,8vw,92px);line-height:.88;letter-spacing:-.055em;margin:17px 0 20px;font-weight:800;text-transform:uppercase}
+.lede{font-size:17px;line-height:1.68;max-width:770px;color:#555a55;margin:0}
+.seal{border-left:1px solid var(--rule);padding:34px 26px;background:var(--sheet-2);display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-width:0}
+.seal .stamp{border:2px solid var(--accent);color:var(--accent);padding:15px 12px;font:800 11px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.11em;text-align:center;transform:rotate(-2deg)}
+.seal dl{margin:0;font:11px/1.75 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.seal dt{color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.seal dd{margin:0 0 9px;overflow-wrap:anywhere}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--rule);background:#eeebe3}
+.fact{padding:18px 22px;border-right:1px solid var(--rule);min-width:0}
+.fact:last-child{border-right:0}
+.fact span{display:block;font:700 9px/1.3 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;color:var(--muted);overflow-wrap:anywhere}
+.fact strong{display:block;margin-top:7px;font:800 14px/1.25 Arial,Helvetica,sans-serif;letter-spacing:.025em;overflow-wrap:anywhere}
+.index{display:flex;gap:7px;overflow-x:auto;padding:14px 18px 14px 24px;border-bottom:1px solid var(--rule);background:#1d1f1d;color:#d8ddd7;scrollbar-width:thin}
+.index a{flex:0 0 auto;text-decoration:none;border:1px solid #4a4f4a;padding:8px 10px;font:700 10px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em;background:#262926}
+.index a:hover,.index a:focus-visible{border-color:var(--accent);outline:none;color:white}
+.policy{padding:8px 52px 48px 60px}
+.entry{display:grid;grid-template-columns:118px minmax(0,1fr);gap:32px;padding:34px 0 36px;border-bottom:1px solid var(--rule);min-width:0}
+.entry:last-child{border-bottom:0}
+.entry-code{position:relative;padding-top:3px;min-width:0}
+.entry-code .n{font:800 42px/.9 Arial,Helvetica,sans-serif;color:var(--accent);letter-spacing:-.05em}
+.entry-code .tag{display:block;margin-top:11px;color:var(--muted);font:700 9px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.11em;text-transform:uppercase;overflow-wrap:anywhere}
+.entry-body{min-width:0}
+h2{margin:0 0 15px;font-size:26px;line-height:1.13;letter-spacing:-.025em;text-transform:uppercase}
+p,li{font-size:15px;line-height:1.75;overflow-wrap:anywhere}
+p{margin:10px 0}
+ul,ol{padding-left:21px}
+.note{margin:18px 0;padding:14px 16px 14px 18px;background:linear-gradient(90deg,var(--accent-soft),rgba(255,255,255,.25));border-left:4px solid var(--accent)}
+code{font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#dfdbd1;padding:2px 5px;border:1px solid #d1ccbf;overflow-wrap:anywhere}
+.closeout{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:25px 32px 25px 60px;background:#1d1f1d;color:#bec4bd;border-top:1px solid #4a4f4a;font-size:12px;line-height:1.6}
+.closeout b{color:white}
+.closeout .mark{font:800 10px/1.3 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.12em;border:1px solid #555b55;padding:10px 12px;text-align:center}
+@media(max-width:780px){
+  .shell{width:100%;margin:0}
+  .casebar{padding:10px 14px;background:#111311}
+  .hero{grid-template-columns:1fr}
+  .hero-main{padding:34px 24px 30px 34px}
+  .seal{border-left:0;border-top:1px solid var(--rule);padding:22px 24px 24px 34px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fact:nth-child(2){border-right:0}
+  .fact:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+  .policy{padding:4px 24px 36px 34px}
+  .entry{grid-template-columns:78px minmax(0,1fr);gap:20px;padding:28px 0}
+  .entry-code .n{font-size:34px}
+  .closeout{padding:22px 24px 22px 34px;grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .casebar{grid-template-columns:1fr;gap:4px}
+  .casebar .id{text-align:left}
+  .hero-main{padding:30px 20px 26px 28px}
+  h1{font-size:48px}
+  .lede{font-size:15px}
+  .seal{grid-template-columns:1fr;padding:20px 20px 22px 28px}
+  .facts{grid-template-columns:1fr}
+  .fact{border-right:0;border-bottom:1px solid var(--rule);padding-left:28px}
+  .fact:last-child{border-bottom:0}
+  .index{padding-left:28px}
+  .policy{padding:2px 20px 30px 28px}
+  .entry{grid-template-columns:1fr;gap:10px;padding:25px 0}
+  .entry-code{display:flex;gap:12px;align-items:baseline}
+  .entry-code .n{font-size:27px}
+  .entry-code .tag{margin-top:0}
+  h2{font-size:22px}
+  p,li{font-size:14px;line-height:1.68}
+  .closeout{padding-left:28px}
+}
+
   </style>
 </head>
 <body>
-  <main class="page">
-    <div class="index-edge" aria-hidden="true"></div>
-    <header class="mast">
-      <div>
-        <div class="kicker">QUIET ANOMALIES / PRIVACY FIELD NOTE</div>
-        <h1>Tideglass</h1>
-        <p class="subtitle">Privacy details for the local aquarium simulation, its saved tank state, and its fictional observation instruments.</p>
-      </div>
-      <div class="record">
-        <b>RECORD TG-PRIV-01</b>
-        Version 1.0.0<br>
-        Effective 5 September 2026<br>
-        Local-only game
-      </div>
-    </header>
-    <div class="facts">
-      <div class="fact">
-        <small>CHROME PERMISSIONS</small>
-        <strong>None</strong>
-      </div>
-      <div class="fact">
-        <small>WEBPAGE ACCESS</small>
-        <strong>None</strong>
-      </div>
-      <div class="fact">
-        <small>NETWORK GAME DATA</small>
-        <strong>None</strong>
-      </div>
-      <div class="fact">
-        <small>PERSISTENT DATA</small>
-        <strong>Local game save</strong>
-      </div>
+  <main class="shell">
+    <div class="casebar" aria-hidden="true">
+      <div class="series">Quiet Anomalies / Sealed Privacy Registry</div>
+      <div class="id">QA-TG / 1.1.0</div>
     </div>
-    <div class="layout">
-      <nav aria-label="Policy contents">
-        <strong>FIELD INDEX</strong>
-        <a href="#s1">01 · Scope and plain-language summary</a>
-        <a href="#s2">02 · Chrome permissions</a>
-        <a href="#s3">03 · Information created during play</a>
-        <a href="#s4">04 · What the player provides</a>
-        <a href="#s5">05 · Local storage and save format</a>
-        <a href="#s6">06 · Retention and deletion</a>
-        <a href="#s7">07 · Aquarium rendering</a>
-        <a href="#s8">08 · Depth, sonar, and reflection mechanics</a>
-        <a href="#s9">09 · Network behavior</a>
-        <a href="#s10">10 · Analytics and advertising</a>
-        <a href="#s11">11 · Webpage and browsing access</a>
-        <a href="#s12">12 · User controls and failure paths</a>
-        <a href="#s13">13 · Children and age considerations</a>
-        <a href="#s14">14 · Security model</a>
-        <a href="#s15">15 · Third parties and service providers</a>
-        <a href="#s16">16 · Policy changes</a>
-        <a href="#s17">17 · Contact and questions</a>
+    <article class="sheet">
+      <header class="hero">
+        <div class="hero-main">
+          <div class="eyebrow">Privacy policy · local software record</div>
+          <h1>Tideglass</h1>
+          <p class="lede">Privacy terms for the local aquarium simulation, resident names, care history, behavioral state, depth instruments, and fictional deep-water anomalies.</p>
+        </div>
+        <aside class="seal" aria-label="Policy record details">
+          <div class="stamp">LOCAL AQUARIUM RECORD<br>SEALED / LOCAL ONLY</div>
+          <dl>
+            <dt>Record</dt><dd>QA-TG / 1.1.0</dd>
+            <dt>Effective</dt><dd>5 September 2026</dd>
+            <dt>Distribution</dt><dd>Chrome extension package</dd>
+          </dl>
+        </aside>
+      </header>
+      <div class="facts" aria-label="Privacy facts">
+      <div class="fact"><span>CHROME PERMISSIONS</span><strong>NONE</strong></div>
+      <div class="fact"><span>WEBPAGE ACCESS</span><strong>NONE</strong></div>
+      <div class="fact"><span>NETWORK / CLOUD</span><strong>NONE</strong></div>
+      <div class="fact"><span>LOCAL SAVE</span><strong>AQUARIUM STATE</strong></div>
+      </div>
+      <nav class="index" aria-label="Privacy policy section index">
+        <a href="#s1" aria-label="Section 1: Scope and plain-language summary">01</a><a href="#s2" aria-label="Section 2: Chrome permissions">02</a><a href="#s3" aria-label="Section 3: Information created during play">03</a><a href="#s4" aria-label="Section 4: What the player provides">04</a><a href="#s5" aria-label="Section 5: Local storage and save migration">05</a><a href="#s6" aria-label="Section 6: Retention and deletion">06</a><a href="#s7" aria-label="Section 7: Aquarium rendering and animation">07</a><a href="#s8" aria-label="Section 8: Food, resident interaction, and behavioral simulation">08</a><a href="#s9" aria-label="Section 9: Chemistry and offline progression">09</a><a href="#s10" aria-label="Section 10: Depth, deep ecology, and cosmic-horror mechanics">10</a><a href="#s11" aria-label="Section 11: Network behavior">11</a><a href="#s12" aria-label="Section 12: Analytics, advertising, and monetization data">12</a><a href="#s13" aria-label="Section 13: Webpage, browsing, and account access">13</a><a href="#s14" aria-label="Section 14: User controls and failure paths">14</a><a href="#s15" aria-label="Section 15: Children and age considerations">15</a><a href="#s16" aria-label="Section 16: Security and third parties">16</a><a href="#s17" aria-label="Section 17: Policy changes and contact">17</a>
       </nav>
-      <article>
-        <section id="s1">
-          <span class="num">01</span>
-          <h2>Scope and plain-language summary</h2>
-          <p>Tideglass is a self-contained aquarium simulation and narrative game that runs inside its extension popup. It does not inspect the websites you visit. The aquarium, fish behavior, chemistry readings, depth anomalies, acoustic returns, and care log are generated by code bundled with the extension.</p>
-          <p>The practical privacy summary is simple: gameplay remains on the device. Tideglass uses the extension page’s localStorage to remember the simulated tank between popup sessions, and it does not send that state to a developer server, analytics provider, advertising network, or cloud account.</p>
-          <p class="note">The unusual measurements in Tideglass are fictional game mechanics. A depth probe, pressure value, sonar return, or reflection count shown by the game is not a sensor reading from the player’s physical environment.</p>
+      <div class="policy">
+        <section class="entry" id="s1">
+          <div class="entry-code">
+            <div class="n">01</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Scope and plain-language summary</h2>
+            <p>Tideglass is a self-contained aquarium simulation and cosmic-horror observation game that runs inside its Chrome extension popup. Version 1.1.0 focuses on six individually simulated residents, visible food, direct aquarium interaction, water chemistry, fictional depth instruments, and a saved local progression state. It does not inspect the websites that are open in other tabs.</p>
+<p>The practical privacy summary is simple: the game state stays on the device. Tideglass does not send the aquarium save, resident names, care choices, pointer interactions, instrument readings, or progress to a developer server, analytics service, advertising network, or cloud account.</p>
+<p class="note">The strange measurements and events in Tideglass are fictional game systems. Depth readings, sonar returns, reflection mismatches, deep-ecology values, and impossible water volume are generated by bundled code and are not measurements of the player’s physical surroundings.</p>
+          </div>
         </section>
-        <section id="s2">
-          <span class="num">02</span>
-          <h2>Chrome permissions</h2>
-          <p>The production manifest declares an empty <code>permissions</code> array. Tideglass does not request <code>tabs</code>, <code>history</code>, <code>activeTab</code>, <code>scripting</code>, <code>storage</code>, notifications, geolocation, camera, microphone, downloads, bookmarks, clipboard, or host access.</p>
-          <p>The game does not need a Chrome storage permission because localStorage belongs to the extension page itself. The absence of host permissions also means Tideglass has no declared ability to read or alter arbitrary webpages.</p>
-          <ul>
-            <li>No host permissions are declared.</li>
-            <li>No content scripts are packaged.</li>
-            <li>No background service worker is needed for gameplay.</li>
-            <li>No optional permissions are requested later.</li>
-          </ul>
+        <section class="entry" id="s2">
+          <div class="entry-code">
+            <div class="n">02</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Chrome permissions</h2>
+            <p>The production manifest for Tideglass 1.1.0 declares an empty permissions array. The extension does not request tabs, history, activeTab, scripting, storage, notifications, geolocation, camera, microphone, downloads, bookmarks, clipboard, browsingData, or host permissions.</p>
+<p>Tideglass does not need the chrome.storage permission because its save uses localStorage that belongs to the extension page itself. It does not request optional permissions later and it does not include a content script or a background service worker for gameplay.</p>
+<p>The absence of host permissions is intentional. The game has no declared ability to read or alter arbitrary webpages and has no reason to know which website is visible when the popup is opened.</p>
+          </div>
         </section>
-        <section id="s3">
-          <span class="num">03</span>
-          <h2>Information created during play</h2>
-          <p>Tideglass creates game-state information as the player cares for the aquarium. This includes simulation time, light and filter state, temperature, oxygen, pH, water level, food availability, algae level, calculated volume, pressure factor, progression stage, probe and sonar unlock state, and recent care-log entries.</p>
-          <p>Each simulated resident also has local gameplay values such as species label, position, movement vector, hunger, stress, simulated depth, and anomaly state. These values describe fictional aquarium entities. They do not represent real animals, real telemetry, or information collected from outside the game.</p>
+        <section class="entry" id="s3">
+          <div class="entry-code">
+            <div class="n">03</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Information created during play</h2>
+            <p>Tideglass creates local game-state information while the player cares for the aquarium. This includes simulated time, light and filter state, temperature, oxygen, pH, water level, algae, detritus, measured volume, pressure factor, progression stage, instrument unlock state, recent sonar returns, recent field-note entries, and the simulated deep-ecology values used by the narrative system.</p>
+<p>Visible food is represented as local game entities with an identifier, normalized position inside the tank, sinking velocity, age, approximate mass, and status such as settled, eaten, or below the substrate. These values exist only to make feeding visible and to let fish behavior respond to actual pellets rather than to an invisible score.</p>
+<p>Each resident has fictional local values including identifier, chosen display name, species, position, movement, hunger, stress, energy, boldness, curiosity, gluttony, preferred water level, current behavior, food target, simulated depth, bond value, and any depth-anomaly state. These values describe simulated animals and are not biological or sensor data from real animals.</p>
+          </div>
         </section>
-        <section id="s4">
-          <span class="num">04</span>
-          <h2>What the player provides</h2>
-          <p>The player provides only ordinary game interactions such as pressing Feed, Water change, Light, Filter, Lower, Ping, Inspect glass reflection, or New tank. Tideglass does not provide a text field for personal information and does not ask the player to identify themselves.</p>
-          <p>Button choices are used immediately to update the local simulation. They are not converted into advertising categories, behavioral profiles, or remote analytics events.</p>
+        <section class="entry" id="s4">
+          <div class="entry-code">
+            <div class="n">04</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>What the player provides</h2>
+            <p>The player provides ordinary game interactions. A player can click a resident, choose where food is dropped in the aquarium, choose where to tap the glass, perform a water change, toggle the light or filter, use fictional instruments after they unlock, inspect the reflection, or start a new tank.</p>
+<p>If the player chooses Rename, Tideglass asks for a short resident name. The resulting name is stored only in the local game save and can be changed again later. Players should use an ordinary pet-style nickname rather than entering sensitive personal information because Tideglass is not designed as a secure note-taking application.</p>
+<p>Normalized tank coordinates for recent feed and tap interactions may be retained as part of the simulation state so nearby fish can react consistently. They represent positions inside a fictional 2D aquarium canvas, not physical location, screen history, cursor tracking outside the popup, or geolocation.</p>
+          </div>
         </section>
-        <section id="s5">
-          <span class="num">05</span>
-          <h2>Local storage and save format</h2>
-          <p>The game stores one JSON save record under the localStorage key <code>tideglass-v1</code>. That record contains the current local simulation and a timestamp used to estimate limited offline progression when the popup is opened again.</p>
-          <p>The save record can contain recent care-log text generated by the game, but those messages are selected by the bundled simulation code. The extension does not copy text from webpages, documents, the clipboard, messages, or other applications into the save.</p>
-          <p class="note">The offline catch-up calculation is deliberately capped. The timestamp is used only to advance the fictional tank by a limited amount; it is not sent away or used to build an activity history.</p>
+        <section class="entry" id="s5">
+          <div class="entry-code">
+            <div class="n">05</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Local storage and save migration</h2>
+            <p>Tideglass 1.1.0 stores one JSON save record under the localStorage key <code>tideglass-v2</code>. The save contains the current aquarium simulation, resident records, visible food state, deep-ecology state, field notes, progression values, and a timestamp used for capped offline advancement.</p>
+<p>When version 1.1.0 finds an older Tideglass 1.0.0 save under <code>tideglass-v1</code> and no v2 save exists, the game migrates compatible values such as resident positions, hunger, stress, chemistry, existing progression, and unlocked instruments into the new behavioral model. After the new v2 save is written successfully, the old v1 key is removed so a stale duplicate is not retained unnecessarily.</p>
+<p class="note">The save is ordinary local game data. Tideglass does not encrypt it and does not claim that localStorage is a secure vault. The game therefore does not ask for passwords, payment information, authentication tokens, private documents, or other secrets.</p>
+          </div>
         </section>
-        <section id="s6">
-          <span class="num">06</span>
-          <h2>Retention and deletion</h2>
-          <p>The local save remains in the browser profile until the player resets the tank, clears the extension’s local data, removes the extension, or the browser otherwise deletes that storage. Tideglass does not maintain a second copy on a remote server.</p>
-          <p>Using New tank replaces the current gameplay state with a fresh tank after confirmation. Browser-level removal or site-data controls can also remove the saved value. Because there is no account and no server copy, there is no separate cloud-deletion request to submit.</p>
+        <section class="entry" id="s6">
+          <div class="entry-code">
+            <div class="n">06</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Retention and deletion</h2>
+            <p>The local save remains in the browser profile until the player starts a New tank, clears the extension’s stored data through browser controls, removes the extension, or the browser otherwise deletes the extension storage. Tideglass does not maintain a second server-side copy.</p>
+<p>New tank replaces the current local progression with a fresh aquarium after a confirmation prompt. Removing the extension or clearing its site data can also remove the save. Because there is no Tideglass account and no cloud save, there is no separate online deletion request required to erase a server copy.</p>
+<p>Field notes are deliberately capped to a small recent history and visible food entities are capped as well. These limits are gameplay and performance safeguards and also prevent unbounded accumulation of local records.</p>
+          </div>
         </section>
-        <section id="s7">
-          <span class="num">07</span>
-          <h2>Aquarium rendering</h2>
-          <p>The aquarium view is drawn locally with the browser canvas API. Fish silhouettes, plants, gravel, bubbles, water gradients, and movement are generated from the local state. The renderer does not request photographs, camera access, image libraries, or network textures.</p>
-          <p>Animation uses requestAnimationFrame while the popup is open. It does not create a background tracker after the popup closes. The simulation’s slower state progression is saved locally so that reopening the popup can resume the tank.</p>
+        <section class="entry" id="s7">
+          <div class="entry-code">
+            <div class="n">07</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Aquarium rendering and animation</h2>
+            <p>The aquarium is drawn locally with the Canvas 2D API. Plants, gravel, bubbles, resident bodies, fins, tails, food pellets, selection outlines, tap ripples, and water gradients are generated by packaged JavaScript and CSS. The extension does not request photographs, camera access, external textures, or remote art assets.</p>
+<p>Resident movement is updated continuously while the popup is open using requestAnimationFrame and a local steering model. Mid-water fish can school and forage, bottom residents favor the substrate, and individuals can flee or investigate after a glass tap according to local personality values. No movement telemetry is sent anywhere.</p>
+<p>The animation loop stops when the extension popup is closed because the popup page itself closes. Tideglass does not create a hidden browser-wide movement tracker after the interface is dismissed.</p>
+          </div>
         </section>
-        <section id="s8">
-          <span class="num">08</span>
-          <h2>Depth, sonar, and reflection mechanics</h2>
-          <p>Depth-probe readings, acoustic returns, measured-volume discrepancies, pressure values, and reflected-resident counts are fictional outputs derived from the game’s progression stage and pseudo-random simulation state. They are designed to create the cosmic-horror premise that the interior of the aquarium no longer agrees with its visible dimensions.</p>
-          <p>The word “sonar” in the interface refers only to a visual game instrument. Tideglass does not access a microphone, speaker input, ultrasonic sensor, network device, Bluetooth device, or physical aquarium equipment. “Inspect glass reflection” similarly does not access a camera.</p>
+        <section class="entry" id="s8">
+          <div class="entry-code">
+            <div class="n">08</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Food, resident interaction, and behavioral simulation</h2>
+            <p>Feeding in Tideglass creates visible pellet entities at the position selected by the player. Residents can choose nearby pellets as targets, move toward them, eat them, and update local hunger or energy. Bottom-dwelling species use different vertical preferences from mid-water species. A tap on the glass creates a local ripple and can cause nearby residents to scatter or investigate according to their simulated boldness.</p>
+<p>Clicking a resident records an observation in the local field notes and displays its local behavior, hunger, and depth. Renaming a resident updates only that resident’s display name. These interactions are designed to make the aquarium feel responsive; they are not used for remote profiling, analytics, or advertising.</p>
+<p>Food and AI processing are bounded. Tideglass limits visible pellet entities and keeps the resident population small, reducing both performance risk and unnecessary local-state growth.</p>
+          </div>
         </section>
-        <section id="s9">
-          <span class="num">09</span>
-          <h2>Network behavior</h2>
-          <p>Tideglass contains no feature that needs to contact an application server. The packaged game does not use fetch, XMLHttpRequest, WebSocket, remote modules, or a cloud save API for gameplay.</p>
-          <p>Because the game does not transmit its save, we do not receive the player’s aquarium progress, anomaly stage, care choices, play duration, IP address, or browser activity from Tideglass itself.</p>
-          <p class="note">The browser may still contact its own vendor infrastructure for extension installation or update checks. That browser behavior is separate from Tideglass’s game code.</p>
+        <section class="entry" id="s9">
+          <div class="entry-code">
+            <div class="n">09</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Chemistry and offline progression</h2>
+            <p>Temperature, oxygen, pH, algae, detritus, filter behavior, light state, and water level are fictional simulation variables. They evolve according to bundled game rules and player care. They are not readings from a real aquarium, smart-home device, sensor, Bluetooth accessory, or network service.</p>
+<p>When the popup is reopened, Tideglass can use the locally stored last-real-time timestamp to advance the fictional chemistry by a limited amount. Offline advancement is capped and intentionally simpler than active play: visible food is resolved into local detritus rather than pretending that detailed fish animation continued while the popup was closed.</p>
+<p>The timestamp is used only for this local catch-up calculation. It is not transmitted and is not used to create a remote activity history.</p>
+          </div>
         </section>
-        <section id="s10">
-          <span class="num">10</span>
-          <h2>Analytics and advertising</h2>
-          <p>Tideglass does not contain product analytics, event analytics, attribution tracking, ad measurement, fingerprinting, sponsored content, personalized advertising, or an advertising identifier. There is no telemetry event for feeding a fish, seeing an anomaly, opening the popup, or resetting the tank.</p>
-          <p>The game also does not sell or rent data. With no game-state transmission, there is no remote gameplay dataset to sell.</p>
+        <section class="entry" id="s10">
+          <div class="entry-code">
+            <div class="n">10</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Depth, deep ecology, and cosmic-horror mechanics</h2>
+            <p>Tideglass’s cosmic-horror layer grows out of the same local simulation. After enough ordinary care, a food pellet may pass below the visible substrate. That event can unlock the fictional depth probe. Deep nutrients and activity are then derived from local uneaten-food events rather than from a remote script or a fixed real-world timer.</p>
+<p>A sufficiently curious simulated resident can follow a deep-bound pellet below the visible column. The resident then receives a fictional depth telemetry value while temporarily absent from the visible aquarium. It may later return with a recorded maximum depth. These events are entirely generated from local game state.</p>
+<p class="note">The deeper progression can affect fictional measured volume, pressure, acoustic returns, and reflection counts. The terms depth probe, sonar, acoustic return, pressure, and reflection refer to game interfaces only. Tideglass does not access the microphone, camera, ultrasonic hardware, Bluetooth, physical aquarium equipment, or environmental sensors.</p>
+          </div>
         </section>
-        <section id="s11">
-          <span class="num">11</span>
-          <h2>Webpage and browsing access</h2>
-          <p>Tideglass runs in its own extension popup. It does not inject a script, stylesheet, overlay, or frame into the current tab. It does not read page titles, page text, links, forms, cookies, history, bookmarks, search queries, or tab URLs.</p>
-          <p>Opening Tideglass while a sensitive webpage is visible does not grant the game access to that webpage because the extension does not request the permissions that would be required for such access.</p>
+        <section class="entry" id="s11">
+          <div class="entry-code">
+            <div class="n">11</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Network behavior</h2>
+            <p>Tideglass contains no gameplay feature that needs to contact an application server. The packaged extension does not use fetch, XMLHttpRequest, WebSocket, remote JavaScript modules, cloud databases, or online save APIs for its aquarium simulation.</p>
+<p>Because the game does not transmit its save, the developer does not receive resident names, fish behavior, chemistry state, anomaly stage, play duration, feed locations, tap locations, field notes, or instrument readings from Tideglass itself.</p>
+<p>The Chrome browser may independently contact browser-vendor infrastructure for extension installation, security checks, or update delivery. Those platform operations are separate from Tideglass game code and are not a Tideglass telemetry service.</p>
+          </div>
         </section>
-        <section id="s12">
-          <span class="num">12</span>
-          <h2>User controls and failure paths</h2>
-          <p>The player can turn the light and filter on or off, perform a water change, feed the tank, operate unlocked fictional instruments, and start a new tank. The interface displays the local readings that the simulation is currently using so that state changes are visible rather than hidden.</p>
-          <p>If stored JSON is missing or does not pass the game’s basic save validation, Tideglass starts a fresh local state instead of attempting to upload, repair, or infer data from another source. The game caps offline advancement to avoid runaway state changes after a long absence.</p>
+        <section class="entry" id="s12">
+          <div class="entry-code">
+            <div class="n">12</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Analytics, advertising, and monetization data</h2>
+            <p>Tideglass does not contain product analytics, event analytics, attribution tracking, advertising SDKs, tracking pixels, sponsored placements, fingerprinting code, personalized advertising, or advertising identifiers. There is no remote event for opening the popup, clicking a fish, feeding, renaming a resident, seeing an anomaly, or resetting the tank.</p>
+<p>The extension does not sell or rent aquarium data. Since the production game has no gameplay-data transmission, it does not create a developer-side dataset of player behavior to sell.</p>
+          </div>
         </section>
-        <section id="s13">
-          <span class="num">13</span>
-          <h2>Children and age considerations</h2>
-          <p>The extension is a general-audience local game. It is not designed to request a child’s name, email address, location, school, contacts, photographs, or other identifying information. The game does not provide chat, social posting, public profiles, matchmaking, purchases, advertising, or account creation.</p>
-          <p>Because no information is transmitted to us, the extension does not build a remote profile of a child or adult player. A parent or guardian who wants to remove the game’s local progress can use the reset control or remove the extension and its local site data through the browser.</p>
+        <section class="entry" id="s13">
+          <div class="entry-code">
+            <div class="n">13</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Webpage, browsing, and account access</h2>
+            <p>Tideglass runs in its own extension popup. It does not inject scripts, stylesheets, overlays, or frames into the current tab. It does not read page text, page titles, links, forms, cookies, browser history, bookmarks, search queries, tab URLs, email, contacts, calendar events, or files on the device.</p>
+<p>The extension has no sign-in feature and does not ask for a Tideglass account. Opening the popup while a sensitive webpage is visible does not grant the game access to that webpage because the required browser permissions are not requested.</p>
+          </div>
         </section>
-        <section id="s14">
-          <span class="num">14</span>
-          <h2>Security model</h2>
-          <p>The extension has a deliberately small attack surface: it requests no Chrome permissions, does not inject into websites, does not load executable code from the Internet, and does not accept network-delivered game state. Its HTML, CSS, JavaScript, icons, and game rules are packaged with the extension.</p>
-          <p>Local browser storage is not a secure vault for secrets. The game therefore does not ask the player to enter passwords, financial details, private notes, authentication tokens, or other sensitive material. Progress data should be treated as ordinary local game state.</p>
-          <p class="note">No security system can guarantee absolute protection against compromise of the device or browser itself. The policy describes the extension’s own behavior, not the security of the operating system around it.</p>
+        <section class="entry" id="s14">
+          <div class="entry-code">
+            <div class="n">14</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>User controls and failure paths</h2>
+            <p>The player can choose where to feed, tap the glass, select or rename residents, change routine care controls, use unlocked fictional instruments, and reset the aquarium. The resident strip and categorized field notes are designed to expose the consequences of actions rather than hiding them behind a generic status message.</p>
+<p>If stored JSON is missing, malformed, or fails the basic v2 save validation, Tideglass starts a new local tank instead of sending the data away for repair. Numeric simulation values are clamped to bounded ranges, food entity counts are capped, and offline catch-up is limited to reduce runaway state or performance problems.</p>
+<p>If an old v1 save can be recognized, Tideglass migrates compatible values into the new model. Migration is local and does not require a server request.</p>
+          </div>
         </section>
-        <section id="s15">
-          <span class="num">15</span>
-          <h2>Third parties and service providers</h2>
-          <p>The extension does not include advertising SDKs, analytics libraries, crash-reporting clients, social SDKs, payment processors, cloud databases, external fonts, remote game engines, or third-party tracking pixels. No third party is given game telemetry by the extension because the extension does not transmit game telemetry.</p>
-          <p>Chrome and the operating system may independently provide platform-level services such as extension installation, update delivery, browser storage, process isolation, or crash handling. Those are browser/platform functions rather than data integrations implemented by this extension.</p>
+        <section class="entry" id="s15">
+          <div class="entry-code">
+            <div class="n">15</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Children and age considerations</h2>
+            <p>Tideglass is a general-audience fictional aquarium game with an eerie cosmic-horror theme. It is not designed to request a child’s legal name, email address, physical location, school, contacts, photographs, payment information, or other identifying information. It has no chat, public profile, social posting, matchmaking, purchases, or advertising.</p>
+<p>The optional resident-name field is intended for short fictional pet names. Parents or guardians who prefer not to retain local progress can reset the tank or remove the extension and its local data through the browser.</p>
+          </div>
         </section>
-        <section id="s16">
-          <span class="num">16</span>
-          <h2>Policy changes</h2>
-          <p>If a future version changes what information the extension handles, adds a permission, introduces an online service, or materially changes retention behavior, this policy should be updated before or with that release. The effective date and version record at the top are intended to make that change visible.</p>
-          <p>A cosmetic rewrite of the game interface does not itself change privacy behavior. A change from local-only processing to network processing would be material and would require a corresponding disclosure.</p>
+        <section class="entry" id="s16">
+          <div class="entry-code">
+            <div class="n">16</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Security and third parties</h2>
+            <p>The extension has a deliberately small external attack surface: it requests no Chrome permissions, declares no host access, injects nothing into websites, and does not load executable code from the Internet. Its HTML, CSS, JavaScript, icons, simulation rules, resident AI, and narrative logic are packaged with the extension.</p>
+<p>Tideglass does not include analytics libraries, advertising SDKs, social SDKs, payment processors, cloud databases, remote fonts, remote game engines, or crash-reporting clients. Chrome and the operating system may provide platform-level services such as process isolation or update delivery, but those are not third-party data integrations added by Tideglass.</p>
+<p>No software can guarantee protection if the browser profile, operating system, or device itself is compromised. This policy describes the extension’s own data behavior and does not claim to secure the surrounding device.</p>
+          </div>
         </section>
-        <section id="s17">
-          <span class="num">17</span>
-          <h2>Contact and questions</h2>
-          <p>Questions about this privacy policy or the extension’s behavior can be sent through the support contact associated with the extension’s official Chrome Web Store listing. Using the listing contact avoids embedding an unrelated personal address in the game package and gives users a channel associated with the published product.</p>
-          <p>When asking a privacy question, players do not need to send save data, screenshots, browsing history, or device identifiers. A description of the concern and the extension version is normally sufficient.</p>
+        <section class="entry" id="s17">
+          <div class="entry-code">
+            <div class="n">17</div>
+            <span class="tag">registry entry</span>
+          </div>
+          <div class="entry-body">
+            <h2>Policy changes and contact</h2>
+            <p>If a future Tideglass release adds a Chrome permission, introduces network processing, changes what is stored, or materially changes retention, this policy should be updated before or with that release. Cosmetic changes that do not alter data handling may not require substantive policy changes, but version and effective-date records should remain accurate.</p>
+<p>Questions about this policy or Tideglass behavior can be sent through the support contact associated with the extension’s official Chrome Web Store listing. A player normally does not need to send a save file, screenshot, browsing history, or device identifier when asking a privacy question; the extension version and a description of the concern are usually sufficient.</p>
+          </div>
         </section>
-      </article>
-    </div>
-    <footer>
-      <span>This policy describes the packaged extension behavior for version 1.0.0.</span>
-      <span>Support and privacy questions: use the support contact provided on the extension’s official Chrome Web Store listing.</span>
-    </footer>
+      </div>
+      <footer class="closeout">
+        <div><b>Tideglass</b> runs locally. Support and privacy questions can be sent through the support contact associated with the extension's official Chrome Web Store listing.</div>
+        <div class="mark">END OF RECORD<br>QA-TG / 1.1.0</div>
+      </footer>
+    </article>
   </main>
 </body>
 </html>
